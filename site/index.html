@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Release checklist</title>
+</head>
+<body>
+  <main>
+    <h1>Release checklist</h1>
+    <form id="add">
+      <label>New item <input name="item" required></label>
+      <button>Add</button>
+    </form>
+    <nav aria-label="Filter">
+      <button data-filter="all" aria-pressed="true">All</button>
+      <button data-filter="open" aria-pressed="false">Open</button>
+      <button data-filter="done" aria-pressed="false">Done</button>
+    </nav>
+    <ul id="items"></ul>
+    <p id="count" role="status"></p>
+    <button id="export">Export</button>
+    <p id="export-status" role="status"></p>
+  </main>
+  <script>
+    const items = [];
+    let filter = 'all';
+    const list = document.getElementById('items');
+
+    function render() {
+      list.replaceChildren(...items
+        .filter((i) => filter === 'all' || (filter === 'done') === i.done)
+        .map((i) => {
+          const li = document.createElement('li');
+          const box = document.createElement('input');
+          box.type = 'checkbox';
+          box.checked = i.done;
+          box.setAttribute('aria-label', i.text);
+          box.onchange = () => { i.done = box.checked; render(); };
+          li.append(box, ' ', i.text);
+          return li;
+        }));
+      const open = items.filter((i) => !i.done).length;
+      document.getElementById('count').textContent = `${open} open of ${items.length}`;
+    }
+
+    document.getElementById('add').onsubmit = (e) => {
+      e.preventDefault();
+      items.push({ text: e.target.item.value.trim(), done: false });
+      e.target.reset();
+      render();
+    };
+
+    for (const b of document.querySelectorAll('[data-filter]')) {
+      b.onclick = () => {
+        filter = b.dataset.filter;
+        for (const o of document.querySelectorAll('[data-filter]')) o.setAttribute('aria-pressed', String(o === b));
+        render();
+      };
+    }
+
+    // The export takes a few seconds, like a real report build
+    document.getElementById('export').onclick = () => {
+      const status = document.getElementById('export-status');
+      status.textContent = 'Exporting...';
+      setTimeout(() => { status.textContent = `Export ready: ${items.length} items`; }, 3000);
+    };
+
+    render();
+  </script>
+</body>
+</html>

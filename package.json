@@ -1,0 +1,14 @@
+{
+  "name": "poc-playwright-shard-merge-reports",
+  "version": "1.0.0",
+  "description": "Shard a Playwright suite across GitHub Actions jobs and merge the results into one HTML report",
+  "private": true,
+  "type": "module",
+  "license": "MIT",
+  "scripts": {
+    "test": "playwright test"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.65.1"
+  }
+}
