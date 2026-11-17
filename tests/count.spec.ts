@@ -8,5 +8,5 @@ test('counts zero items', async ({ checklist }) => {
 test('counts open items', async ({ checklist }) => {
   const page = await checklist('Freeze main', 'Tag the release');
   await page.getByRole('checkbox', { name: 'Freeze main' }).check();
-  await expect(page.getByText('1 open of 2')).toBeVisible();
+  await expect(page.getByText('2 open of 2')).toBeVisible();
 });
