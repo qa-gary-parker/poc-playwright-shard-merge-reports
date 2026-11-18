@@ -1,0 +1,25 @@
+$ npx playwright test --list --shard=1/4
+  [chromium] › add.spec.ts:3:1 › adds an item
+  [chromium] › add.spec.ts:8:1 › adds items in order
+  [chromium] › add.spec.ts:13:1 › clears the input after adding
+  [chromium] › add.spec.ts:18:1 › does not add an empty item
+  [chromium] › count.spec.ts:3:1 › counts zero items
+Total: 5 tests in 2 files
+$ npx playwright test --list --shard=2/4
+  [chromium] › count.spec.ts:8:1 › counts open items
+  [chromium] › export.spec.ts:3:1 › shows progress while exporting
+  [chromium] › export.spec.ts:9:1 › exports an empty checklist
+  [chromium] › export.spec.ts:15:1 › exports every item
+Total: 4 tests in 2 files
+$ npx playwright test --list --shard=3/4
+  [chromium] › export.spec.ts:21:1 › exports done items too
+  [chromium] › filter.spec.ts:8:1 › shows open items
+  [chromium] › filter.spec.ts:13:1 › shows done items
+  [chromium] › filter.spec.ts:18:1 › shows all items again
+Total: 4 tests in 2 files
+$ npx playwright test --list --shard=4/4
+  [chromium] › filter.spec.ts:24:1 › marks the active filter as pressed
+  [chromium] › toggle.spec.ts:3:1 › marks an item done
+  [chromium] › toggle.spec.ts:9:1 › marks an item open again
+  [chromium] › toggle.spec.ts:17:1 › only changes the item clicked
+Total: 4 tests in 2 files
