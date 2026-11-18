@@ -1,0 +1,128 @@
+{
+  "gh-run-green.duration": [
+    61.1,
+    24.78,
+    6.42,
+    9.82
+  ],
+  "gh-run-green.shards": [
+    28,
+    61.38,
+    19.29,
+    33.57
+  ],
+  "gh-run-green.shard2": [
+    28,
+    69.24,
+    19.29,
+    10
+  ],
+  "gh-run-green.merge": [
+    51.71,
+    61.38,
+    19.29,
+    10
+  ],
+  "gh-run-green.status": [
+    51.96,
+    24.78,
+    6,
+    9.82
+  ],
+  "gh-run-green.artifacts": [
+    70.67,
+    24.78,
+    4.3,
+    9.82
+  ],
+  "gh-run-red.duration": [
+    65.69,
+    24.78,
+    6.42,
+    9.82
+  ],
+  "gh-run-red.shards": [
+    28,
+    61.38,
+    19.29,
+    33.57
+  ],
+  "gh-run-red.shard2": [
+    28,
+    69.24,
+    19.29,
+    10
+  ],
+  "gh-run-red.merge": [
+    51.71,
+    61.38,
+    19.29,
+    10
+  ],
+  "gh-run-red.status": [
+    56.55,
+    24.78,
+    6,
+    9.82
+  ],
+  "gh-run-red.artifacts": [
+    75.25,
+    24.78,
+    4.3,
+    9.82
+  ],
+  "report-green.counts": [
+    45.52,
+    1.16,
+    20.48,
+    5.12
+  ],
+  "report-red.counts": [
+    50.08,
+    1.16,
+    24.5,
+    5.12
+  ],
+  "report-red.failed": [
+    3.8,
+    14.53,
+    94.7,
+    7.09
+  ],
+  "report-red-test.tabs": [
+    0.6,
+    18.95,
+    42.45,
+    6.98
+  ],
+  "report-red-test.error": [
+    3.9,
+    34.3,
+    37.33,
+    16.28
+  ],
+  "report-red-retry1.expect": [
+    7.3,
+    28.95,
+    90.4,
+    5.81
+  ],
+  "report-red-retry1.trace": [
+    4.3,
+    56.28,
+    21.2,
+    20.93
+  ],
+  "trace.action": [
+    1.36,
+    56.63,
+    16.86,
+    6.98
+  ],
+  "trace.page": [
+    32.19,
+    33.29,
+    4.06,
+    2.61
+  ]
+}

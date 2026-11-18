@@ -1,0 +1,759 @@
+{
+  "green": {
+    "id": 44123317088,
+    "url": "https://github.com/qa-gary-parker/poc-playwright-shard-merge-reports/actions/runs/44123317088",
+    "event": "push",
+    "branch": "main",
+    "conclusion": "success",
+    "seconds": 85,
+    "jobs": [
+      {
+        "name": "playwright-tests (1, 4)",
+        "shard": 1,
+        "conclusion": "success",
+        "seconds": 35,
+        "installSeconds": 17,
+        "testSeconds": 3,
+        "uploadStep": "success"
+      },
+      {
+        "name": "playwright-tests (2, 4)",
+        "shard": 2,
+        "conclusion": "success",
+        "seconds": 65,
+        "installSeconds": 32,
+        "testSeconds": 11,
+        "uploadStep": "success"
+      },
+      {
+        "name": "playwright-tests (3, 4)",
+        "shard": 3,
+        "conclusion": "success",
+        "seconds": 61,
+        "installSeconds": 33,
+        "testSeconds": 10,
+        "uploadStep": "success"
+      },
+      {
+        "name": "playwright-tests (4, 4)",
+        "shard": 4,
+        "conclusion": "success",
+        "seconds": 43,
+        "installSeconds": 24,
+        "testSeconds": 4,
+        "uploadStep": "success"
+      },
+      {
+        "name": "merge-reports",
+        "shard": null,
+        "conclusion": "success",
+        "seconds": 14,
+        "installSeconds": null,
+        "testSeconds": null,
+        "uploadStep": "success"
+      }
+    ],
+    "artifacts": [
+      {
+        "name": "blob-report-1",
+        "bytes": 5534
+      },
+      {
+        "name": "blob-report-2",
+        "bytes": 5130
+      },
+      {
+        "name": "blob-report-3",
+        "bytes": 5982
+      },
+      {
+        "name": "blob-report-4",
+        "bytes": 5391
+      },
+      {
+        "name": "html-report--attempt-1",
+        "bytes": 204172
+      }
+    ],
+    "tests": [
+      {
+        "shard": 1,
+        "file": "add.spec.ts",
+        "line": 3,
+        "title": "adds an item",
+        "results": [
+          {
+            "status": "passed",
+            "ms": 257,
+            "worker": 0,
+            "attachments": [],
+            "error": null
+          }
+        ],
+        "shardStatus": "passed",
+        "shardMs": 2104
+      },
+      {
+        "shard": 1,
+        "file": "add.spec.ts",
+        "line": 8,
+        "title": "adds items in order",
+        "results": [
+          {
+            "status": "passed",
+            "ms": 325,
+            "worker": 0,
+            "attachments": [],
+            "error": null
+          }
+        ],
+        "shardStatus": "passed",
+        "shardMs": 2104
+      },
+      {
+        "shard": 1,
+        "file": "add.spec.ts",
+        "line": 13,
+        "title": "clears the input after adding",
+        "results": [
+          {
+            "status": "passed",
+            "ms": 178,
+            "worker": 0,
+            "attachments": [],
+            "error": null
+          }
+        ],
+        "shardStatus": "passed",
+        "shardMs": 2104
+      },
+      {
+        "shard": 1,
+        "file": "add.spec.ts",
+        "line": 18,
+        "title": "does not add an empty item",
+        "results": [
+          {
+            "status": "passed",
+            "ms": 188,
+            "worker": 0,
+            "attachments": [],
+            "error": null
+          }
+        ],
+        "shardStatus": "passed",
+        "shardMs": 2104
+      },
+      {
+        "shard": 1,
+        "file": "count.spec.ts",
+        "line": 3,
+        "title": "counts zero items",
+        "results": [
+          {
+            "status": "passed",
+            "ms": 136,
+            "worker": 0,
+            "attachments": [],
+            "error": null
+          }
+        ],
+        "shardStatus": "passed",
+        "shardMs": 2104
+      },
+      {
+        "shard": 2,
+        "file": "count.spec.ts",
+        "line": 8,
+        "title": "counts open items",
+        "results": [
+          {
+            "status": "passed",
+            "ms": 378,
+            "worker": 0,
+            "attachments": [],
+            "error": null
+          }
+        ],
+        "shardStatus": "passed",
+        "shardMs": 10419
+      },
+      {
+        "shard": 2,
+        "file": "export.spec.ts",
+        "line": 3,
+        "title": "shows progress while exporting",
+        "results": [
+          {
+            "status": "passed",
+            "ms": 218,
+            "worker": 0,
+            "attachments": [],
+            "error": null
+          }
+        ],
+        "shardStatus": "passed",
+        "shardMs": 10419
+      },
+      {
+        "shard": 2,
+        "file": "export.spec.ts",
+        "line": 9,
+        "title": "exports an empty checklist",
+        "results": [
+          {
+            "status": "passed",
+            "ms": 3479,
+            "worker": 0,
+            "attachments": [],
+            "error": null
+          }
+        ],
+        "shardStatus": "passed",
+        "shardMs": 10419
+      },
+      {
+        "shard": 2,
+        "file": "export.spec.ts",
+        "line": 15,
+        "title": "exports every item",
+        "results": [
+          {
+            "status": "passed",
+            "ms": 3668,
+            "worker": 0,
+            "attachments": [],
+            "error": null
+          }
+        ],
+        "shardStatus": "passed",
+        "shardMs": 10419
+      },
+      {
+        "shard": 3,
+        "file": "export.spec.ts",
+        "line": 21,
+        "title": "exports done items too",
+        "results": [
+          {
+            "status": "passed",
+            "ms": 3650,
+            "worker": 0,
+            "attachments": [],
+            "error": null
+          }
+        ],
+        "shardStatus": "passed",
+        "shardMs": 8604
+      },
+      {
+        "shard": 3,
+        "file": "filter.spec.ts",
+        "line": 8,
+        "title": "shows open items",
+        "results": [
+          {
+            "status": "passed",
+            "ms": 309,
+            "worker": 0,
+            "attachments": [],
+            "error": null
+          }
+        ],
+        "shardStatus": "passed",
+        "shardMs": 8604
+      },
+      {
+        "shard": 3,
+        "file": "filter.spec.ts",
+        "line": 13,
+        "title": "shows done items",
+        "results": [
+          {
+            "status": "passed",
+            "ms": 288,
+            "worker": 0,
+            "attachments": [],
+            "error": null
+          }
+        ],
+        "shardStatus": "passed",
+        "shardMs": 8604
+      },
+      {
+        "shard": 3,
+        "file": "filter.spec.ts",
+        "line": 18,
+        "title": "shows all items again",
+        "results": [
+          {
+            "status": "passed",
+            "ms": 319,
+            "worker": 0,
+            "attachments": [],
+            "error": null
+          }
+        ],
+        "shardStatus": "passed",
+        "shardMs": 8604
+      },
+      {
+        "shard": 4,
+        "file": "filter.spec.ts",
+        "line": 24,
+        "title": "marks the active filter as pressed",
+        "results": [
+          {
+            "status": "passed",
+            "ms": 333,
+            "worker": 0,
+            "attachments": [],
+            "error": null
+          }
+        ],
+        "shardStatus": "passed",
+        "shardMs": 2956
+      },
+      {
+        "shard": 4,
+        "file": "toggle.spec.ts",
+        "line": 3,
+        "title": "marks an item done",
+        "results": [
+          {
+            "status": "passed",
+            "ms": 185,
+            "worker": 0,
+            "attachments": [],
+            "error": null
+          }
+        ],
+        "shardStatus": "passed",
+        "shardMs": 2956
+      },
+      {
+        "shard": 4,
+        "file": "toggle.spec.ts",
+        "line": 9,
+        "title": "marks an item open again",
+        "results": [
+          {
+            "status": "passed",
+            "ms": 223,
+            "worker": 0,
+            "attachments": [],
+            "error": null
+          }
+        ],
+        "shardStatus": "passed",
+        "shardMs": 2956
+      },
+      {
+        "shard": 4,
+        "file": "toggle.spec.ts",
+        "line": 17,
+        "title": "only changes the item clicked",
+        "results": [
+          {
+            "status": "passed",
+            "ms": 222,
+            "worker": 0,
+            "attachments": [],
+            "error": null
+          }
+        ],
+        "shardStatus": "passed",
+        "shardMs": 2956
+      }
+    ]
+  },
+  "red": {
+    "id": 44130118878,
+    "url": "https://github.com/qa-gary-parker/poc-playwright-shard-merge-reports/actions/runs/44130118878",
+    "event": "pull_request",
+    "branch": "demo/one-failing-test",
+    "conclusion": "failure",
+    "seconds": 78,
+    "jobs": [
+      {
+        "name": "playwright-tests (1, 4)",
+        "shard": 1,
+        "conclusion": "success",
+        "seconds": 38,
+        "installSeconds": 19,
+        "testSeconds": 4,
+        "uploadStep": "success"
+      },
+      {
+        "name": "playwright-tests (2, 4)",
+        "shard": 2,
+        "conclusion": "failure",
+        "seconds": 58,
+        "installSeconds": 16,
+        "testSeconds": 28,
+        "uploadStep": "success"
+      },
+      {
+        "name": "playwright-tests (3, 4)",
+        "shard": 3,
+        "conclusion": "success",
+        "seconds": 45,
+        "installSeconds": 21,
+        "testSeconds": 7,
+        "uploadStep": "success"
+      },
+      {
+        "name": "playwright-tests (4, 4)",
+        "shard": 4,
+        "conclusion": "success",
+        "seconds": 40,
+        "installSeconds": 21,
+        "testSeconds": 5,
+        "uploadStep": "success"
+      },
+      {
+        "name": "merge-reports",
+        "shard": null,
+        "conclusion": "success",
+        "seconds": 16,
+        "installSeconds": null,
+        "testSeconds": null,
+        "uploadStep": "success"
+      }
+    ],
+    "artifacts": [
+      {
+        "name": "blob-report-1",
+        "bytes": 5754
+      },
+      {
+        "name": "blob-report-2",
+        "bytes": 58200
+      },
+      {
+        "name": "blob-report-3",
+        "bytes": 6199
+      },
+      {
+        "name": "blob-report-4",
+        "bytes": 5673
+      },
+      {
+        "name": "html-report--attempt-1",
+        "bytes": 681183
+      }
+    ],
+    "tests": [
+      {
+        "shard": 1,
+        "file": "add.spec.ts",
+        "line": 3,
+        "title": "adds an item",
+        "results": [
+          {
+            "status": "passed",
+            "ms": 247,
+            "worker": 0,
+            "attachments": [],
+            "error": null
+          }
+        ],
+        "shardStatus": "passed",
+        "shardMs": 2244
+      },
+      {
+        "shard": 1,
+        "file": "add.spec.ts",
+        "line": 8,
+        "title": "adds items in order",
+        "results": [
+          {
+            "status": "passed",
+            "ms": 303,
+            "worker": 0,
+            "attachments": [],
+            "error": null
+          }
+        ],
+        "shardStatus": "passed",
+        "shardMs": 2244
+      },
+      {
+        "shard": 1,
+        "file": "add.spec.ts",
+        "line": 13,
+        "title": "clears the input after adding",
+        "results": [
+          {
+            "status": "passed",
+            "ms": 155,
+            "worker": 0,
+            "attachments": [],
+            "error": null
+          }
+        ],
+        "shardStatus": "passed",
+        "shardMs": 2244
+      },
+      {
+        "shard": 1,
+        "file": "add.spec.ts",
+        "line": 18,
+        "title": "does not add an empty item",
+        "results": [
+          {
+            "status": "passed",
+            "ms": 152,
+            "worker": 0,
+            "attachments": [],
+            "error": null
+          }
+        ],
+        "shardStatus": "passed",
+        "shardMs": 2244
+      },
+      {
+        "shard": 1,
+        "file": "count.spec.ts",
+        "line": 3,
+        "title": "counts zero items",
+        "results": [
+          {
+            "status": "passed",
+            "ms": 105,
+            "worker": 0,
+            "attachments": [],
+            "error": null
+          }
+        ],
+        "shardStatus": "passed",
+        "shardMs": 2244
+      },
+      {
+        "shard": 2,
+        "file": "count.spec.ts",
+        "line": 8,
+        "title": "counts open items",
+        "results": [
+          {
+            "status": "failed",
+            "ms": 5465,
+            "worker": 0,
+            "attachments": [
+              "error-context"
+            ],
+            "error": "Error: expect(locator).toBeVisible() failed\n\nLocator: getByText('2 open of 2')\nExpected: visible\nTimeout: 5000ms"
+          },
+          {
+            "status": "failed",
+            "ms": 5443,
+            "worker": 0,
+            "attachments": [
+              "error-context",
+              "trace"
+            ],
+            "error": "Error: expect(locator).toBeVisible() failed\n\nLocator: getByText('2 open of 2')\nExpected: visible\nTimeout: 5000ms"
+          },
+          {
+            "status": "failed",
+            "ms": 5331,
+            "worker": 0,
+            "attachments": [
+              "error-context"
+            ],
+            "error": "Error: expect(locator).toBeVisible() failed\n\nLocator: getByText('2 open of 2')\nExpected: visible\nTimeout: 5000ms"
+          }
+        ],
+        "shardStatus": "failed",
+        "shardMs": 26264
+      },
+      {
+        "shard": 2,
+        "file": "export.spec.ts",
+        "line": 3,
+        "title": "shows progress while exporting",
+        "results": [
+          {
+            "status": "passed",
+            "ms": 284,
+            "worker": 0,
+            "attachments": [],
+            "error": null
+          }
+        ],
+        "shardStatus": "failed",
+        "shardMs": 26264
+      },
+      {
+        "shard": 2,
+        "file": "export.spec.ts",
+        "line": 9,
+        "title": "exports an empty checklist",
+        "results": [
+          {
+            "status": "passed",
+            "ms": 3448,
+            "worker": 0,
+            "attachments": [],
+            "error": null
+          }
+        ],
+        "shardStatus": "failed",
+        "shardMs": 26264
+      },
+      {
+        "shard": 2,
+        "file": "export.spec.ts",
+        "line": 15,
+        "title": "exports every item",
+        "results": [
+          {
+            "status": "passed",
+            "ms": 3549,
+            "worker": 0,
+            "attachments": [],
+            "error": null
+          }
+        ],
+        "shardStatus": "failed",
+        "shardMs": 26264
+      },
+      {
+        "shard": 3,
+        "file": "export.spec.ts",
+        "line": 21,
+        "title": "exports done items too",
+        "results": [
+          {
+            "status": "passed",
+            "ms": 3716,
+            "worker": 0,
+            "attachments": [],
+            "error": null
+          }
+        ],
+        "shardStatus": "passed",
+        "shardMs": 6372
+      },
+      {
+        "shard": 3,
+        "file": "filter.spec.ts",
+        "line": 8,
+        "title": "shows open items",
+        "results": [
+          {
+            "status": "passed",
+            "ms": 301,
+            "worker": 0,
+            "attachments": [],
+            "error": null
+          }
+        ],
+        "shardStatus": "passed",
+        "shardMs": 6372
+      },
+      {
+        "shard": 3,
+        "file": "filter.spec.ts",
+        "line": 13,
+        "title": "shows done items",
+        "results": [
+          {
+            "status": "passed",
+            "ms": 286,
+            "worker": 0,
+            "attachments": [],
+            "error": null
+          }
+        ],
+        "shardStatus": "passed",
+        "shardMs": 6372
+      },
+      {
+        "shard": 3,
+        "file": "filter.spec.ts",
+        "line": 18,
+        "title": "shows all items again",
+        "results": [
+          {
+            "status": "passed",
+            "ms": 319,
+            "worker": 0,
+            "attachments": [],
+            "error": null
+          }
+        ],
+        "shardStatus": "passed",
+        "shardMs": 6372
+      },
+      {
+        "shard": 4,
+        "file": "filter.spec.ts",
+        "line": 24,
+        "title": "marks the active filter as pressed",
+        "results": [
+          {
+            "status": "passed",
+            "ms": 593,
+            "worker": 0,
+            "attachments": [],
+            "error": null
+          }
+        ],
+        "shardStatus": "passed",
+        "shardMs": 3689
+      },
+      {
+        "shard": 4,
+        "file": "toggle.spec.ts",
+        "line": 3,
+        "title": "marks an item done",
+        "results": [
+          {
+            "status": "passed",
+            "ms": 344,
+            "worker": 0,
+            "attachments": [],
+            "error": null
+          }
+        ],
+        "shardStatus": "passed",
+        "shardMs": 3689
+      },
+      {
+        "shard": 4,
+        "file": "toggle.spec.ts",
+        "line": 9,
+        "title": "marks an item open again",
+        "results": [
+          {
+            "status": "passed",
+            "ms": 301,
+            "worker": 0,
+            "attachments": [],
+            "error": null
+          }
+        ],
+        "shardStatus": "passed",
+        "shardMs": 3689
+      },
+      {
+        "shard": 4,
+        "file": "toggle.spec.ts",
+        "line": 17,
+        "title": "only changes the item clicked",
+        "results": [
+          {
+            "status": "passed",
+            "ms": 303,
+            "worker": 0,
+            "attachments": [],
+            "error": null
+          }
+        ],
+        "shardStatus": "passed",
+        "shardMs": 3689
+      }
+    ]
+  }
+}
